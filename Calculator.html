@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val; 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value; 
+             let y = eval(x); 
+             document.getElementById("result").value = y; 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = " "; 
+         } 
+</script> 
+    
+<style>
+
+.calc{
+width:500px;
+background-color:#ccf2cc;
+margin:auto;
+padding:15px;
+border: solid grey 2px;
+border-radius: 12px
+}
+
+.calc input[type='text'] {
+width:448px;
+height:60px;
+padding:10px;
+font-size:30px;
+margin:10px;
+border: solid gray 2px;
+background-color: White;
+border-radius: 8px
+}
+
+.calc input[type='button'] {
+padding:15px;
+margin:10px;
+width:75px;
+font-size:20px;
+border-radius: 8px;
+border: solid gray 2px;
+background-color: #ffc459
+
+}
+
+.calc input[type='button'].xx {
+width:175px;
+border: solid gray 2px;
+background-color:#ff4d4d
+border-radius: 8px
+}
+</style>
+</head>
+<body style="background-image: url(calc.jpg)">
+
+
+<div style="margin-left:5%; width:100%; color: white; text-shadow: 3px 2px red "><h1 align="center">Calculator</h1>
+<div class='calc'>
+<input type='text' id="result">
+<input type='button' value='('onclick="dis('(')"/>
+<input type='button' value=')'onclick="dis(')')"/>
+<input type='button' value='Cos'onclick="dis('Math.cos')"/>
+<input type='button' value='Sin'onclick="dis('Math.sin')"/>
+<input type='button' value='Tan'onclick="dis('Math.tan')"/>
+<input type='button' value='7'onclick="dis(7)"/>
+<input type='button' value='8'onclick="dis(8)"/>
+<input type='button' value='9' onclick="dis(9)"/>
+<input class='xx' type='button' value='AC' onclick="clr()">
+<input type='button' value='4' onclick="dis(4)">
+<input type='button' value='5' onclick="dis(5)">
+<input type='button' value='6'onclick="dis(6)" >
+<input type='button' value='X' onclick="dis('*')">
+<input type='button' value='/' onclick="dis('/')">
+<input type='button' value='1' onclick="dis(1)">
+<input type='button' value='2' onclick="dis(2)">
+<input type='button' value='3' onclick="dis(3)">
+<input type='button' value='+' onclick="dis('+')">
+<input type='button' value='-' onclick="dis('-')">
+<input class='xx' type='button' value='0'onclick="dis(0)" >
+<input type='button' value='.'onclick="dis('.')" >
+<input class ='xx' type='button' value='=' onclick="solve()">
+<input type='button' value='pi'onclick="dis('Math.PI')"/>
+<input type='button' value='^'onclick="dis('Math.pow')"/>
+<input type='button' value='log'onclick="dis('Math.log')"/>
+<input type='button' value=','onclick="dis(',')"/>
+<input type='button' value='Sqrt'onclick="dis('Math.sqrt')"/>
+    </div>
+<p>&copy; 2019 MVitkovic<p>
+</body>
+</html>
