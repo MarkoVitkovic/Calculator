@@ -16,7 +16,7 @@ This scientific calculator is created with HTML,CSS,JS. Work okay, one of my fir
 Feel free to clone or download and upgrade it.
 
 ## Screenshots
-![](https://github.com/MarkoVitkovic/html_css_javascript-login_form/blob/master/sc.png)
+![](https://github.com/MarkoVitkovic/html_css_js-calculator/blob/master/calc1.png)
 
 ## Technologies
 * [HTML](https://devdocs.io/html/)
