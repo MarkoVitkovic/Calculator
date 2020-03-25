@@ -28,6 +28,14 @@ Feel free to clone or download and upgrade it.
 
 ## Code Examples
 Code:</br>
+`.calc{`</br>
+`width:500px;`</br>
+`background-color:#ccf2cc;`</br>
+`margin:auto;`</br>
+`padding:15px;`</br>
+`border: solid grey 2px;`</br>
+`border-radius: 12px`</br>
+`}`</br>
 
 
 ## Features
